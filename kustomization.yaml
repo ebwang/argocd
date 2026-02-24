@@ -4,7 +4,7 @@ kind: Kustomization
 helmCharts:
   - name: my-app
     # Add repo to point to the local chart directory
-    repo: ./helm
+    repo: file://./helm
     version: 0.1.0
     releaseName: my-app-release
     namespace: my-app
